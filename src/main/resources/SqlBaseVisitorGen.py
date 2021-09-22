@@ -2,11 +2,12 @@
 
 import os
 
+# generating the SqlBaseVisitorImpl.java file
 if __name__ == '__main__':
     print(os.getcwd())
     with open('../../../gen/antlr/sql/SqlBaseBaseVisitor.java', 'r', encoding='utf-8') as fr:
         with open('../java/antlr/sql/SqlBaseVisitorImpl.java', 'w', encoding='utf-8') as fw:
-            fw.write("package antlr.sql;\n\npublic class SqlBaseVisitorImpl extends SqlBaseBaseVisitor<String> {\n\n")
+            fw.write("// generated from SqlBaseVisitorGen.py\npackage antlr.sql;\n\npublic class SqlBaseVisitorImpl extends SqlBaseBaseVisitor<String> {\n\n")
             for line in fr.readlines():
                 line = line.strip()
                 if line.startswith('@Override'):

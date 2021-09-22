@@ -1,3 +1,4 @@
+// generated from SqlBaseVisitorGen.py
 package antlr.sql;
 
 public class SqlBaseVisitorImpl extends SqlBaseBaseVisitor<String> {

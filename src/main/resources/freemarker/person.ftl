@@ -3,9 +3,14 @@
 <personList>
 <#list personList as person>
     <person>
+        <#if showName>
         <name>${person.name}</name>
+        </#if>
         <#if showAge>
         <age>${person.age}</age>
+        </#if>
+        <#if showSummary>
+        <summary>${person.getSummary()}</summary>
         </#if>
     </person>
 </#list>

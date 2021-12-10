@@ -30,7 +30,9 @@ public class FreeMarkerDemo {
 
         Map<String, Object> map = new HashMap<>();
         map.put("showPersonList", true);
+        map.put("showName", true);
         map.put("showAge", true);
+        map.put("showSummary", false);
         map.put("personList", personList);
 
         Template template = cfg.getTemplate("person.ftl");
@@ -48,6 +50,14 @@ public class FreeMarkerDemo {
         System.out.println("-------------------------------------");
 
         personList.remove(personList.size() - 1);
+        out = new StringWriter();
+        template.process(map, out);
+        output = out.toString();
+        System.out.println(output);
+        System.out.println("-------------------------------------");
+
+        map.replace("showName", false);
+        map.replace("showSummary", true);
         out = new StringWriter();
         template.process(map, out);
         output = out.toString();

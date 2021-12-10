@@ -8,4 +8,8 @@ import lombok.Data;
 public class Person {
     private String name;
     private int age;
+
+    public String getSummary() {
+        return this.name + "," + this.age;
+    }
 }

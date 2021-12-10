@@ -1,0 +1,5 @@
+2021-12-10 14:55:33  [ main:0 ] - [ DEBUG ]  debug message
+2021-12-10 14:55:33  [ main:1 ] - [ INFO ]  info message
+2021-12-10 14:55:33  [ main:1 ] - [ WARN ]  warn message
+2021-12-10 14:55:33  [ main:5 ] - [ ERROR ]  error message
+2021-12-10 14:55:33  [ main:5 ] - [ FATAL ]  fatal message

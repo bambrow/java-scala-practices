@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sched-conf>
+    <update-queue>
+        <queue-name>root.a</queue-name>
+        <params>
+            <entry>
+                <key>capacity</key>
+                <value>[memory=512,vcores=1]</value>
+            </entry>
+            <entry>
+                <key>maximum-capacity</key>
+                <value>[memory=512,vcores=1]</value>
+            </entry>
+            <entry>
+                <key>default-application-lifetime</key>
+                <value>-1</value>
+            </entry>
+            <entry>
+                <key>maximum-application-lifetime</key>
+                <value>-1</value>
+            </entry>
+            <entry>
+                <key>user-limit-factor</key>
+                <value>1</value>
+            </entry>
+            <entry>
+                <key>state</key>
+                <value>STOPPED</value>
+            </entry>
+        </params>
+    </update-queue>
+    <remove-queue>root.a.a1</remove-queue>
+</sched-conf>
